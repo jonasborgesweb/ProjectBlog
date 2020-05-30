@@ -7,7 +7,7 @@ export const Center = styled.div`
   margin: 0 auto;
 `;
 export const Container = styled.header`
-  background-color: ${colors.black};
+  background-color: ${colors.blackDark};
   padding: 2rem 0;
 `;
 export const ContainerWrapper = styled.div`

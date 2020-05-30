@@ -31,6 +31,12 @@ const Header:React.FC = () =>{
                 <Link to="/">Home</Link>
               </li>
               <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/users">Equipe</Link>
+              </li>
+              <li>
                 <Link to="/contact">Contato</Link>
               </li>
             </ul>

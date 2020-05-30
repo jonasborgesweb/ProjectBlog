@@ -5,6 +5,7 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
   }
 
   html{
@@ -13,10 +14,7 @@ export default createGlobalStyle`
 
   body, input, button{
     font-size: 1.6rem;
-    font-family: sans-serif;
-  }
-
-  body{
+    font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 

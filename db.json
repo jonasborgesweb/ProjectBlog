@@ -4,38 +4,32 @@
       "id": 1,
       "name": "Jonas Borges",
       "email": "jonasborgesweb@gmail.com",
-      "password": "123456"
+      "password": "123456",
+      "description": "lorem ipsum",
+      "avatar_url": "images/users/1/photo.jpg"
     },
     {
       "id": 2,
       "name": "Isadora Souza",
       "email": "isadorasouza@gmail.com",
-      "password": "123456"
-    }
-  ],
-  "categories":[
-    {
-      "id": 1,
-      "name": "Vehicles"
-    },
-    {
-      "id": 2,
-      "name": "Performance"
+      "password": "123456",
+      "description": "lorem ipsum",
+      "avatar_url": "images/users/2/photo.jpg"
     }
   ],
   "posts":[
     {
       "id": 1,
-      "category_id": 1,
+      "category": "vehicles",
       "user_id": 1,
       "title": "One of Saturn’s largest rings may be newer than anyone",
       "urlImage": "images/posts/1/imagePost.png",
       "shortBody":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
-      "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem"
+      "body": "Sed ut perspiciatis unde \nomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem"
     },
     {
       "id": 2,
-      "category_id": 2,
+      "category": 2,
       "user_id": 1,
       "title": "One of Saturn’s largest rings may be newer than anyone",
       "urlImage": "images/posts/2/imagePost.png",
@@ -44,7 +38,7 @@
     },
     {
       "id": 3,
-      "category_id": 1,
+      "category": "vehicles",
       "user_id": 2,
       "title": "One of Saturn’s largest rings may be newer than anyone",
       "urlImage": "images/posts/3/imagePost.png",
@@ -53,7 +47,7 @@
     },
     {
       "id": 4,
-      "category_id": 2,
+      "category": 2,
       "user_id": 2,
       "title": "One of Saturn’s largest rings may be newer than anyone",
       "urlImage": "images/posts/4/imagePost.png",
