@@ -11,12 +11,6 @@ export const Center = styled.div`
 export const Container = styled.section`
 `;
 
-export const Slider = styled.div`
-  background-color:${colors.gray};
-  height: 50rem;
-  margin: 3rem 0;
-`;
-
 export const ContainerWrapper = styled.div`
   display: flex;
   align-items: flex-start;
@@ -168,7 +162,7 @@ export const User = styled.div`
       padding: 1.3rem 0;
       width: 100%;
       border-radius: .3rem;
-      transition: .3s ease; 
+      transition: .3s ease;
 
       font-size: 1.4rem;
       font-weight: 500;
@@ -179,7 +173,7 @@ export const User = styled.div`
         transform: translateY(-.3rem);
         background-color: ${shade(0.2, colors.blue)}
       }
-      
+
     }
   }
 `;
@@ -218,14 +212,14 @@ export const PopularPost = styled.div`
   }
 
   > div{
-    
+
     h3{
       font-size: 1.8rem;
       font-weight: 700;
       color: ${colors.black};
       margin-bottom: .2rem;
     }
-    
+
     p{
       font-size: 1.4rem;
       font-weight: 300;

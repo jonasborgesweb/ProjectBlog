@@ -2,12 +2,12 @@ import React, { useEffect,useState, useCallback } from 'react';
 import {Link} from 'react-router-dom';
 
 import {users, categories, posts} from '../../services/resources/database';
+import SlideView from '../../components/SlideView'
 
 import {
   Center,
   Container,
   ContainerWrapper,
-  Slider,
   Featured,
   Post,
   PostContent,
@@ -20,7 +20,7 @@ import {
   PopularPost,
   SidebarNewsletter,
 } from './styles';
-import { url } from 'inspector';
+
 
 interface IPost {
   id:string,
@@ -72,10 +72,8 @@ const Home:React.FC = () => {
 
   return (
   <Container>
+    <SlideView />
     <Center>
-      <Slider>
-        <h2>Aqui vai o slider com os destaques</h2>
-      </Slider>
       <ContainerWrapper>
         <Featured>
           {isPost.map(post =>(
@@ -86,11 +84,11 @@ const Home:React.FC = () => {
               <PostContent>
                 <Tooltip >
                   <p>{categoryPostName(post.category_id)}</p>
-                </Tooltip> 
-                <strong>{post.title}</strong> 
+                </Tooltip>
+                <strong>{post.title}</strong>
                 <p>Autor: {userPostName(post.user_id)}</p>
                 <Bottom>
-                  <p>{post.shortBody}</p> 
+                  <p>{post.shortBody}</p>
                   <Link to={'/post/' + post.id} >Ler mais . . .</Link>
                 </Bottom>
               </PostContent>
@@ -101,7 +99,7 @@ const Home:React.FC = () => {
         <Sidebar>
           <SidebarUsers>
             {isUsers.map(user=>(
-              <User>
+              <User key={user.id}>
                 <header style={{backgroundImage:`url(${user.avatar_url})`}}>
                   {/* <img src={user.avatar_url} alt={user.name}/> */}
                 </header>
@@ -112,7 +110,7 @@ const Home:React.FC = () => {
                 </div>
               </User>
             ))}
-          </SidebarUsers> 
+          </SidebarUsers>
           <SidebarPost>
             <h2>Popular Posts</h2>
               {isPost.map(post=>(

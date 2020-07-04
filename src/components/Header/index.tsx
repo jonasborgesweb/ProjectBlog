@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import {AiOutlineSearch} from 'react-icons/ai';
 
 import logoWhite from '../../images/icons/Logo-branco.svg';
 import ModalSearch from '../../components/Search';
@@ -42,7 +43,9 @@ const Header:React.FC = () =>{
             </ul>
           </Navigation>
           <Search>
-            <button type="button" onClick={()=>setIsSearchVisible(true)}>Icone</button>
+            <button type="button" onClick={()=>setIsSearchVisible(true)}>
+            <AiOutlineSearch size={24} />
+            </button>
             {isSearchVisible &&
               <ModalSearch id="modal" onClose={()=>setIsSearchVisible(false)}>
                 <input type="text" placeholder="Digite aqui..."/>
