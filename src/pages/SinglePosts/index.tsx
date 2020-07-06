@@ -91,16 +91,16 @@ const SinglePosts:React.FC = (id) =>{
         <ContainerWrapper>
           <Post>
             <header>
-              <img src={'../' + isPost?.urlImage} alt={isPost?.title}/>
+              <img src={'../../' + isPost?.urlImage} alt={isPost?.title}/>
             </header>
             <PostContent>
               <Tooltip >
                 <p>{isCategory?.name}</p>
-              </Tooltip> 
-              <strong>{isPost?.title}</strong> 
+              </Tooltip>
+              <strong>{isPost?.title}</strong>
               <p>Autor: {isUser?.name}</p>
               <Bottom>
-                <p>{isPost?.body}</p> 
+                <p>{isPost?.body}</p>
               </Bottom>
             </PostContent>
           </Post>
@@ -126,15 +126,15 @@ const SinglePosts:React.FC = (id) =>{
                     </header>
                     <Tooltip >
                       <p>{isCategory?.name}</p>
-                    </Tooltip> 
+                    </Tooltip>
                     <strong>{post.title}</strong>
-                    <Link to={'/post/' + post.id} >Ler mais . . .</Link>
+                    <Link to={'/blog/post/' + post.id} >Ler mais . . .</Link>
                   </PostRelacionaship>
                 ))
               }
             </div>
           </Sidebar>
-        </ContainerWrapper>   
+        </ContainerWrapper>
       </Center>
     </Container>
   )

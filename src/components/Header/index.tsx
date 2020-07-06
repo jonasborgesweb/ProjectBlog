@@ -32,10 +32,13 @@ const Header:React.FC = () =>{
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/services">Serviços</Link>
               </li>
               <li>
-                <Link to="/users">Equipe</Link>
+                <Link to="/about">Sobre</Link>
+              </li>
+              <li>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
                 <Link to="/contact">Contato</Link>
@@ -44,12 +47,13 @@ const Header:React.FC = () =>{
           </Navigation>
           <Search>
             <button type="button" onClick={()=>setIsSearchVisible(true)}>
-            <AiOutlineSearch size={24} />
+            <AiOutlineSearch size={28} />
             </button>
             {isSearchVisible &&
               <ModalSearch id="modal" onClose={()=>setIsSearchVisible(false)}>
-                <input type="text" placeholder="Digite aqui..."/>
-                <button type="button">Pesquisar</button>
+                <h2>Pesquisar</h2>
+                <input type="text" placeholder="Digite aqui o termo da pesquisa . . ."/>
+                <button type="button">Buscar</button>
               </ModalSearch>
             }
           </Search>

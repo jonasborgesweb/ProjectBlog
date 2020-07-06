@@ -7,8 +7,13 @@ export const Center = styled.div`
   margin: 0 auto;
 `;
 export const Container = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: ${colors.blackDark};
   padding: 2rem 0;
+  box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+
 `;
 export const ContainerWrapper = styled.div`
   display: flex;
@@ -48,7 +53,16 @@ export const Navigation = styled.nav`
 `;
 export const Search = styled.div`
   position: relative;
-  
+
+  button{
+    background-color: transparent;
+    border: none;
+
+    svg{
+      color: ${colors.white};
+    }
+  }
+
   form{
     position: absolute
   }

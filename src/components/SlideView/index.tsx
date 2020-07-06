@@ -48,7 +48,7 @@ const SlideView:React.FC = () =>{
             <SliderContent>
               <h2>{post.title}</h2>
               <p>{post.shortBody}</p>
-              <Link to={'/post/' + post.id} >Saiba mais</Link>
+              <Link to={'/blog/post/' + post.id} >Saiba mais</Link>
             </SliderContent>
           </Center>
         </SliderSingle>
